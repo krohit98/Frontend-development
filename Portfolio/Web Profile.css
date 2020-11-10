@@ -8,136 +8,169 @@ html,body{
     height:100%;
     overflow-x:hidden;
     scroll-behavior:smooth;
+    font-size:2vmin;
+    font-family: 'Baloo Tammudu 2', cursive;
 }
-.background{
-    position:fixed;
-    top:0;
-    left:0;
-    background-image:url("img1.jpg");
-    background-repeat: no-repeat;
+html{overflow-y: hidden;}
+a{
+    text-decoration:none;
+    color:white;
+}
+#homePage{
+    position:relative;
+    background-image:url("webpages/homepage.jpg");
     background-size:cover;
-    margin:0;
-    width:100%;
-    height:100%;
-    -webkit-filter: blur(2px);
-    -moz-filter: blur(2px);
-    -o-filter: blur(2px);
-    -ms-filter: blur(2px);
-    filter: blur(2px);
-    z-index:-1;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height:100vh;
 }
 #navbar{
-    position:relative;
-    top:3vmin;
+    width:90%;
+    margin:auto;
+    background:rgba(0, 0, 0, 0.5);
 }
 #nav-container{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width:40vw;
  }
  #nav-container a{
-    text-decoration:underline transparent;
+    flex-shrink:0;
     list-style-type: none;
+    text-decoration: none;
     color:white;
-    font-size:5vmin;
+    font-size:2.5vmin;
+    letter-spacing: 3px;
     border:1vmin solid rgba(0,0,0,0);
     font-family: 'Open Sans Condensed', sans-serif;
-    transition: text-decoration 0.5s ,text-shadow 0.5s;
+    transition: background 0.5s,color 0.5s;
 }
 #nav-container a:hover{
-    text-shadow:0 0 2vmin rgb(255, 255, 255);
-    text-decoration:underline rgb(227, 212, 245);
-}
-.card{
-    margin:auto;
-    margin-top:5vh;
-    margin-bottom:5vh;
-    background:rgba(0, 0, 0, 0.8);
-    height:85vh;
-    width:90vw;
-    color:white;
-    box-shadow:0 0 2vmin rgb(196, 163, 248);
+    background:rgba(255,255,255,0.8);
+    color:black;
 }
 #intro{
     display:flex;
     justify-content: center;
     align-items:center;
+    height:95%;
 }
 #introTextBorder{
     display:flex;
     flex-direction:column;
-    width:60vw;
+    background:rgba(255,255,255,0.1);
+    padding:5%;
+    width:90%;
 }
 #msg2{
     font-size:6vmin;
-    font-family: 'Sansita Swashed', cursive;
-    color:#26f38d;
-    text-shadow:0 0 1vmin #26f38d;
+    font-family: 'Baloo Tammudu 2', cursive;
+    text-align:center;
+    opacity:0.5;
 }
 #msg3{
-    background:white;
     padding-top:2%;
-    background-image:linear-gradient(90deg,#f2ff3c,#2f9aff 60%);
-    -webkit-background-clip:text;
-    -moz-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    -o-text-fill-color: transparent;
     font-size:8vmin;
     font-family: 'Baloo Tammudu 2', cursive;
     line-height:8vmin;
+    text-align:center;
 }
 #name{
     padding-top:4%;
     font-size:15vmin;
-    font-family: 'Chilanka', cursive;
     font-family: 'Titillium Web', sans-serif;
-    text-shadow:0 0 2vmin rgb(255, 0, 0);
     line-height:13vmin;
-    letter-spacing:1.5vmin;
+    letter-spacing:3vmin;
+    text-align:center;
 }
 .card-head{
-    position:relative;
-    display:block;
+    border:1px solid black;
+    padding:2.5%;
+    background:#151515;
+    background-image:url('webpages/cardhead.jpg');;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment:fixed;
     text-align: center;
-    top:5%;
-    text-shadow:0 0 4vmin yellow;
     font-size:3vmin;
-    font-family: 'Montserrat', sans-serif;
-    font-weight:lighter;
+    letter-spacing:1vmin;
+    font-family: 'Titillium Web', sans-serif;
+    color:rgb(1, 211, 183);
+}
+.card-head h1{
+    display:inline;
+    padding:1%;
+    border:2px dashed rgba(255,255,255,0.2);
+    text-align:center;
+}
+#aboutmePage{
+    background-image:url("webpages/aboutpage.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height:100%;
+}
+#aboutme{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    margin:auto;
+    margin-top:5vh;
+    background:rgba(0, 0, 0, 0.7);
+    height:85vh;
+    width:90vw;
+    color:white;
+    }
+#about{
+    display:flex;
 }
 #about-text{
-    position:relative;
-    display:block;
+    padding:4%;
     width:70%;
-    top:20%;
-    margin:auto;
-    background:rgba(255, 255, 255, 0.07);
-    border:1px dashed white;
-    padding:2vmin;
+    padding-left:0;
+}
+#about-text a{
+    text-decoration:underline;
+    color:white;
 }
 .about-msg{
-    font-size: 3.5vmin;
+    font-size: 3vmin;
     text-align:justify;
-    text-shadow:0 0 2vmin white;
-    font-family: 'Josefin Sans', sans-serif;
+    text-shadow:0 0 4vmin white;
+    font-family: 'Baloo Tammudu 2', cursive;
+    line-height:4.5vmin;
 }
-#skill-title{
-    position:relative;
-    display:block;
-    top:35%;
-    text-align: center;
-    font-size:3.5vmin;
-    text-shadow:0 0 1vmin white;
-    text-decoration:underline;
-    font-family: 'Sansita Swashed', cursive;
-}
-#skill-container{
-    position:relative;
+#about-img{
     display:flex;
     justify-content: center;
-    top:40%;  
+    align-items: center;
+    padding:1%;
+    width:40%;
+}
+#about-img img{
+    width:35vmin;
+    height:35vmin;
+    border-radius:50%;
+}
+#skills{
+    height:100%;
+    padding:2%;
+}
+#skill-title{
+    width:90%;
+    margin:auto;
+    text-align: center;
+    font-size:3vmin;
+    text-shadow:0 0 4vmin white;
+    text-decoration:underline;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+#skill-container{
+    display:flex;
+    justify-content: center;
 }
 #skill-container li{
     text-decoration-style: none;
@@ -146,10 +179,11 @@ html,body{
 }
 .skillimg{
     text-align: center;
-    font-family: 'Source Code Pro', monospace;
-    font-size:2.5vmin;
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-size:1.5rem;
     text-shadow:0 0 1vmin white;
-    transition:padding-top 0.5s;
+    transition:padding-top 0.4s;
+    line-height:1.5rem;
 }
 .skillimg:hover{
     padding-top:20%;
@@ -189,37 +223,53 @@ html,body{
     display:block;
     text-align: center;
 }
+#projectsPage{
+    background-image:url('webpages/projectpage.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    border:1px solid transparent;
+}
 #project-container{
-    display:flex;
-    position:relative;
-    top:5%;
-    width:80%;
-    margin:0 auto;
-    height:60vh;
-    overflow:hidden;
-    scroll-behavior: smooth;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
+    width:90%;
+    margin:5%;   
 }
-
 .projects{
-    margin-left:0.5vw;
-    margin-right:0.5vw;
+height:100%;
+padding-bottom:20%;
 }
-
-.project-img{
+.project-wrapper{
     position:relative;
-    height:35vh;
-    width:70vh;
-    border-bottom:2vmin solid rgba(0,0,0,0);
+    top:20%;
+    width:52vh;
+    height:100%;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    transition: top 0.3s;
+}
+.project-wrapper:hover{
+    top:0;
+    height:120%;
+}
+.project-img{
+    width:100%;
+    height:25vh;
     z-index:1;
+    box-shadow:0 -1px 2vmin black;
 }
 .project-img img{
     width:100%;
     height:100%;
 }
 .project-details{
-    visibility:hidden;
-    text-shadow:0 0 3vmin white;
-    background:rgba(255,255,255,0.1);
+    background:rgba(0,0,0,0.9);
+    box-shadow:0 1px 2vmin black;
+    z-index:3;
+    color:white;
 }
 @keyframes fadein{
     0%{opacity:0;}
@@ -227,90 +277,65 @@ html,body{
 }
 .project-name{
     text-align:center;
-    font-size:2.2vmin;
-    font-family: 'Sansita Swashed', cursive;
-    text-decoration: underline;
+    font-size:2.7vmin;
+    font-family: 'Baloo Tammudu 2', cursive;
     padding-top:1vmin;
     padding-bottom:1vmin;
 }
 .tech-list{
     display:flex;
-    justify-content: space-evenly;
-    padding-top:1vmin;
-    padding-bottom:1vmin;
-    border-bottom:1px dashed white;
+    justify-content: flex-end;
+    padding-bottom:2vmin;
 }
 .tech-list li{
-    font-size:1.8vmin;
-    font-family: 'Source Code Pro', monospace;
+    background:rgb(202, 202, 202);
+    list-style-type: none;
+    font-size:3vmin;
+    line-height:0;
+    margin:0 1vmin;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:4vmin;
+    height:4vmin;
+    border-radius:50%;
+}
+.tech-list li i{
+    color:black;
+    transform:translate(5%,5%);
 }
 .project-button{
     display:flex;
-    justify-content:space-evenly;
-    padding-top:2vmin;
-    padding-bottom:2vmin;
+    justify-content:center;
+    align-items:center;
+    padding-bottom:1vmin;
 }
 .projButtons{
-    background:rgba(0,0,0,0.5);
+    background:rgba(0,0,0,0.8);
     height:6vh;
     width:18vh;
-    border:2px outset rgb(200,50,50);
+    border:3px outset rgb(1, 211, 183);
     color:white;
     font-size:2.5vmin;
     font-family: 'Oswald', sans-serif;
+    letter-spacing:0.3vmin;
     outline:none;
     transition:box-shadow 0.3s, text-shadow 0.3s;
 }
 .projButtons:hover{
-    box-shadow: 0 0 1vmin rgb(200,50,50);
+    box-shadow: 0 0 2vmin rgb(1, 211, 183);
     text-shadow: 0 0 1vmin white;
 }
 .projButtons:active{
-    border:2px inset rgb(200,50,50);
+    border:3px inset rgb(1, 211, 183);
 }
-#scode,#page{
-    position:absolute;
-    visibility:hidden;
-    z-index:-1;
-}
-#buttons{
-    position:relative;
-    top:30%;
-    display:flex;
-    margin-left:5%;
-    margin-right:5%;
-    font-size:10vmin;
-    font-family: 'Nanum Gothic', sans-serif;
-    color:rgba(255,255,255,0.3);
-    text-shadow:0 0 0.2vmin white;
-    animation:glow;
-    animation-duration: 1s;
-    animation-iteration-count:infinite;
-}
-@keyframes glow{
-    50%{color:white;text-shadow:0 0 1vmin white;}
-    100%{color:rgba(255, 255, 255, 0.3);}
-}
-#next{
-    padding-left:20%;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-}
-#next:hover{
-    color:white;
-    text-shadow:0 0 2vmin white;
-}
-#prev{
-    flex:1;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-    visibility: hidden;
-}
-#prev:hover{
-    color:white;
-    text-shadow:0 0 2vmin white;
+#certificates{
+    background:url("webpages/certificatepage.jpg");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height:100vh;
 }
 .grid-container{
     position:relative;
@@ -323,21 +348,9 @@ html,body{
     overflow-x: hidden;
 }
 .cert-container{
-    height:35vh;
-    width:auto;
-    margin:10%;
-    border:1px solid black;
-    transition:border 0.5s;
-}
-.cert-container:hover{
-    position:relative;
-    top:0;
-    left:-5%;
-    width:100%;
-    height:44vh;
+    height:60%;
     margin:5%;
-    margin-bottom:-5%;
-    border:10px outset rgba(255,255,255,0.2);
+    border:10px solid rgba(0,0,0,0.6);
 }
 .cert-img{
     width:100%;
@@ -369,12 +382,20 @@ html,body{
     height:65%;
     margin-top:2.5%;
     border-radius:25px;
-    transition: box-shadow 0.3s, background 0.25s;
+    transition: box-shadow 0.3s, background 0.3s;
 }
 .verify-btn button:hover{
     box-shadow:0 0 2vmin white;
     cursor: pointer;
     background:rgba(255,255,255,0.6);
+}
+#contact{
+    background:url("webpages/contactpage.jpg");
+    background-size:cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height:100vh;
 }
 .contact-container{
     position:relative;
@@ -391,7 +412,7 @@ html,body{
 }
 #contact-form{
     display:block;
-    background:rgba(0,0,0,0.6);
+    background:rgba(0,0,0,0.8);
     border:1px solid transparent;
     width:90%;
     height:100%;
@@ -405,8 +426,10 @@ html,body{
     flex-direction:column;
 }
 .inputLabel{
-    font-family: 'Raleway', sans-serif;
-    font-size:larger;
+    color:white;
+    font-family: 'Baloo Tammudu 2', cursive;
+    line-height:2vmin;
+    font-size:3vmin;
     padding-bottom:2%;
 }
 .inputText{
@@ -441,10 +464,11 @@ html,body{
 }
 #submitButton{
     outline:none;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Baloo Tammudu 2', cursive;
     font-weight: bold;
-    font-size:larger;
-    padding:1%;
+    font-size:3vmin;
+    line-height:3vmin;
+    padding-top:1.5vmin;
     border:2px solid transparent;
     border-radius:5px;
     background:rgba(70, 248, 70, 0.5);
@@ -458,11 +482,12 @@ html,body{
     flex:1;
 }
 #contactList{
-    background:rgba(0,0,0,0.6);
+    background:rgba(0,0,0,0.8);
     height:100%;
     display:grid;
     grid-template-columns:1fr 1fr;
     box-shadow:0 0 0.2vmin white;
+    color:white;
 }
 .contactLinks{
     padding:5%;
@@ -477,7 +502,8 @@ html,body{
     border-radius:50%;
 }
 .contactLinks a{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Baloo Tammudu 2', cursive;
+    line-height:0;
     font-size:3vmin;
     text-decoration: none;
     color:white;
@@ -487,7 +513,8 @@ html,body{
     text-shadow:0 0 0.5vmin  white;
 }
 .contactLinks span{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Baloo Tammudu 2', cursive;
+    line-height:0;
     font-size:3vmin;
     padding-left:2%;
 }
@@ -596,7 +623,11 @@ html,body{
     height:100%;
     visibility:hidden;
 }
-#navigator-links li{
+#navigator-links a{
+    text-decoration: none;
+    color:white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing:0.1vmin;
     flex-shrink:0;
     display:flex;
     align-items:center;
@@ -604,13 +635,7 @@ html,body{
     list-style-type: none;
     transition:background 0.3s, text-shadow 0.3s;
 }
-#navigator-links li:hover{
+#navigator-links a:hover{
     background:rgba(255,255,255,0.2);
     text-shadow:0 0 1vmin white;
-}
-#navigator-links li a{
-    text-decoration: none;
-    color:white;
-    font-family: 'Open Sans Condensed', sans-serif;
-    letter-spacing:0.1vmin;
 }
