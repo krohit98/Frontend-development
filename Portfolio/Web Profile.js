@@ -5,6 +5,7 @@ const nav=document.getElementById("navigator");
 const navlinks=document.getElementById("navigator-links");
 const position=document.getElementById("aboutmebr");
 const body=document.getElementsByTagName("body")[0];
+const video=document.getElementById("videoBackground");
 
 certificate.forEach(i=>i.addEventListener("mouseenter",showButton));
 certificate.forEach(i=>i.addEventListener("mouseleave",hideButton));
@@ -57,3 +58,5 @@ function hideNavigator(){
     navlinks.style.setProperty('visibility','hidden');
     document.getElementById("navigatorIcon").style.setProperty('transform','rotate(0deg)');
 }
+
+video.src="webpages/homepage.mp4";

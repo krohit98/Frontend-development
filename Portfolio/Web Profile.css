@@ -21,6 +21,7 @@ a{
     height:100vh;
 }
 #homePage video{
+    background:linear-gradient(120deg,rgb(40, 202, 214),rgb(255, 106, 86));
     height:130%;
     position:fixed;
     top:0;
@@ -119,7 +120,7 @@ a{
     flex-direction:column;
     justify-content:space-between;
     width:90vw;
-    height:90%;
+    height:85%;
     margin:auto 5%;
     background:rgba(0, 0, 0, 0.7);
     color:white;
@@ -502,6 +503,8 @@ a{
 .contactLinks{
     padding:5%;
     list-style-type: none;
+    display:flex;
+    align-items: center;
 }
 .contactLinks i{
     font-size:3vmin;
@@ -513,7 +516,8 @@ a{
 }
 .contactLinks a{
     font-family: 'Baloo Tammudu 2', cursive;
-    line-height:0;
+    padding-top:3%;
+    line-height:2vmin;
     font-size:3vmin;
     text-decoration: none;
     color:white;
@@ -524,7 +528,8 @@ a{
 }
 .contactLinks span{
     font-family: 'Baloo Tammudu 2', cursive;
-    line-height:0;
+    padding-top:1%;
+    line-height:2vmin;
     font-size:3vmin;
     padding-left:2%;
 }
