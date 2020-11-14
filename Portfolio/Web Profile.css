@@ -744,8 +744,9 @@ a{
     }
     #projectsPage{
         background-image: url("webpages/projectpage2.jpg");
+        background-position:center;
+        background-size:cover;
         background-attachment: scroll;
-        background-position:left;
     }
     #project-container{
         grid-template-columns:repeat(auto-fit,minmax(52vmin,1fr)); 
