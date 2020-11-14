@@ -58,5 +58,3 @@ function hideNavigator(){
     navlinks.style.setProperty('visibility','hidden');
     document.getElementById("navigatorIcon").style.setProperty('transform','rotate(0deg)');
 }
-
-video.src="webpages/homepage.mp4";
